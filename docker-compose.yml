@@ -1,0 +1,25 @@
+version: "2.3"
+services:
+  traefik:
+    image: mahertf/openeats-traefik:1.1.0
+    restart: unless-stopped
+    volumes:
+      - certs:/mnt/certs
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - openeats
+    environment:
+      - TZ=Europe/Berlin
+
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+
+volumes:
+  certs:
+
+networks:
+  openeats:
+    external:
+      name: openeats_default
