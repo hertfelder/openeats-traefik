@@ -6,7 +6,7 @@ docker pull mahertf/openeats-traefik:${VERSION}
 
 docker run -d \
 	--restart unless-stopped \
-	-p 8080:8080 \
+#	-p 8080:8080 \
 	-p 443:443 \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-e TZ=Europe/Berlin \

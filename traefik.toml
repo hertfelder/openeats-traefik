@@ -84,13 +84,13 @@
   # Optional
   # Default: true
   #
-  insecure = true
+#  insecure = true
   # Enabled Dashboard
   #
   # Optional
   # Default: true
   #
-  dashboard = true
+#  dashboard = true
 ################################################################
 # Ping configuration
 ################################################################
