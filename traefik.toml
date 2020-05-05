@@ -67,7 +67,7 @@
   # Optional
   # Default: os.Stdout
   #
-  # filePath = "/path/to/log/log.txt"
+  filePath = "/var/log/traefik/access.log"
   # Format is either "json" or "common".
   #
   # Optional
